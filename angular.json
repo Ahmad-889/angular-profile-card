@@ -33,6 +33,7 @@
           },
           "configurations": {
             "production": {
+               "baseHref": "/angular-profile-card/",
               "budgets": [
                 {
                   "type": "initial",
