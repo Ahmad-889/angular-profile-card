@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -25,15 +25,8 @@ jobs:
       run: |
         npm run build -- --configuration production --output-path=dist/angular-profile-card/browser --base-href=/angular-profile-card/
 
-    - name: Configure Git identity
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"    
-
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages  # The branch the action deploys to
+        branch: gh-pages
         folder: dist/angular-profile-card/browser
-        clean: true
-        token: ${{ secrets.GITHUB_TOKEN }}
