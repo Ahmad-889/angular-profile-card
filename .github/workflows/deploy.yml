@@ -28,5 +28,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages
-        folder: dist/angular-profile-card/browser
+        branch: gh-pages  # The branch to deploy to
+        folder: dist/angular-profile-card/browser  # The build output folder
+        clean: true
