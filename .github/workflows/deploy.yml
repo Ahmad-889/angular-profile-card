@@ -25,6 +25,11 @@ jobs:
       run: |
         npm run build -- --configuration production --output-path=dist/angular-profile-card/browser --base-href=/angular-profile-card/
 
+    - name: Configure Git identity
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"    
+
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
