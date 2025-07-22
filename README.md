@@ -32,6 +32,10 @@ I developed a responsive **Profile Card** component using:
 - `app.component.html` — Template for profile card and input fields  
 - `app.component.css` — Custom styles for card layout and inputs  
 
+## 📸 Screenshot
+
+![Profile Card Screenshot](public/screenshot.png)
+
 ## 🚀 Running the Project
 
 To start the development server, run:
@@ -39,6 +43,4 @@ To start the development server, run:
 ```bash
 ng serve
 
-## 📸 Screenshot
 
-![Profile Card Screenshot](screenshot.png)
