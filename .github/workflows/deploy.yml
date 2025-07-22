@@ -30,3 +30,5 @@ jobs:
       with:
         branch: gh-pages  # The branch the action deploys to
         folder: dist/angular-profile-card/browser
+        clean: true
+        token: ${{ secrets.GITHUB_TOKEN }}
